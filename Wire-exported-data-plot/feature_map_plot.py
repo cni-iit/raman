@@ -128,6 +128,9 @@ def process_raman_colormap(
     
     # Save the figure
     plt.savefig(output_file, dpi=dpi, bbox_inches='tight')
+    
+    # Show and close the plot
+    plt.show()
     plt.close()
     
     print(f"Image saved to {output_file}")
